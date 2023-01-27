@@ -55,7 +55,7 @@ export const menuData = [
     },
     {
         id: 7,
-        categoryId: 1,
+        categoryId: 3,
         name: "Салат “Японка”",
         image: image_3,
         weight: "300 грамм - 1 порция",
@@ -63,7 +63,7 @@ export const menuData = [
     },
     {
         id: 8,
-        categoryId: 1,
+        categoryId: 2,
         name: "Салат “Греческий”",
         image: image_4,
         weight: "300 грамм - 1 порция",

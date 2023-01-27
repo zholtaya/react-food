@@ -181,9 +181,12 @@ body {
   text-align: center;
 }
 
-.filter_item:first-child {
+.selected {
   background-color: #FE8C01;
+}
 
+.selected .name_filter_item {
+  color: #FFFFFF;
 }
 
 .selected-filter {

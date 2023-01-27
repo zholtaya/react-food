@@ -1,13 +1,12 @@
 import React from 'react';
-import { categoriesData } from '../constants/categoriesData';
 import CategoryItem from './CategoryItem';
 
-const CategoriesList = () => {
+const CategoriesList = ({ categoriesData, selectedCategoryId, handleCategoryClick }) => {
     return (
         <div className="filter_categories">
             {
                 categoriesData.map((category) => (
-                    <CategoryItem icon={category.icon} text={category.text} key={category.id}/>
+                    <CategoryItem handleCategoryClick={handleCategoryClick} isSelected={category.id === selectedCategoryId} key={category.id} {...category}/>
                 ))
             }
         </div>
