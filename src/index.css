@@ -200,6 +200,12 @@ body {
   position: relative;
   width: 360px;
   height: 360px;
+  border-radius: 16px;
+}
+
+.img__wrap img {
+  border-radius: 16px;
+  object-fit: cover;
 }
 
 .img__description {
@@ -215,7 +221,7 @@ body {
   visibility: hidden;
   opacity: 0;
 
-  transition: opacity .2s;
+  transition: all 0.3s ease-in-out;
 }
 
 .img__wrap:hover .img__description {
@@ -243,7 +249,7 @@ body {
   margin-bottom: 10px;
 }
 .catalog_menu_items{
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .catalog_description h5 {
   font-size: 12px;
@@ -260,7 +266,8 @@ body {
 }
 .catalog_menu_item_all{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 20px;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;

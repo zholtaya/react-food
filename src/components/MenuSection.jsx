@@ -21,9 +21,9 @@ const MenuSection = () => {
                     </h2>
                     <div className="border_title"></div>
                 </div>
-                
-                <CategoriesList handleCategoryClick={handleCategoryClick} selectedCategoryId={selectedCategoryId} categoriesData={categoriesData}/>
-                <MenuList />
+
+                <CategoriesList handleCategoryClick={handleCategoryClick} selectedCategoryId={selectedCategoryId} categoriesData={categoriesData} />
+                <MenuList selectedCategory={selectedCategoryId}/>
 
                 <button className="button_showmore_catalog">
                     Показать ещё
